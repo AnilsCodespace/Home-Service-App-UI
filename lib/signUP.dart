@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tl_task/porfolio.dart';
 
-
 class SignUp extends StatefulWidget {
-
-
   @override
   _SignUpState createState() => _SignUpState();
 }
@@ -37,20 +34,17 @@ class _SignUpState extends State<SignUp> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(resizeToAvoidBottomInset: false,
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
       key: scaffoldKey,
-
       appBar: AppBar(
         backgroundColor: Color(0xFF121E2A),
         automaticallyImplyLeading: false,
-        leading:
-        Icon(
+        leading: Icon(
           Icons.arrow_back_rounded,
           color: Colors.white,
           size: 30,
         ),
-
-
         title: Text(
           'Create Profile',
           style: TextStyle(
@@ -65,14 +59,8 @@ class _SignUpState extends State<SignUp> {
       ),
       body: SafeArea(
         child: Container(
-          width: MediaQuery
-              .of(context)
-              .size
-              .width,
-          height: MediaQuery
-              .of(context)
-              .size
-              .height,
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
             color: Color(0xFF121E2A),
           ),
@@ -85,12 +73,12 @@ class _SignUpState extends State<SignUp> {
                   controller: textController1,
                   autofocus: true,
                   obscureText: false,
-                  decoration: InputDecoration(fillColor: Colors.white,
+                  decoration: InputDecoration(
+                    fillColor: Colors.white,
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10)),
                     hintText: 'Job Title',
-
                   ),
                 ),
               ),
@@ -100,13 +88,12 @@ class _SignUpState extends State<SignUp> {
                   controller: textController2,
                   autofocus: true,
                   obscureText: false,
-                  decoration: InputDecoration(fillColor: Colors.white,
+                  decoration: InputDecoration(
+                    fillColor: Colors.white,
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10)),
                     hintText: 'Contact Number',
-
-
                   ),
                 ),
               ),
@@ -144,7 +131,6 @@ class _SignUpState extends State<SignUp> {
                       child: Text(
                         'Electrician x',
                         textAlign: TextAlign.start,
-
                       ),
                     ),
                   ),
@@ -160,8 +146,7 @@ class _SignUpState extends State<SignUp> {
                       'Add upto 5 skills',
                       style: TextStyle(
                         fontFamily: 'Poppins',
-                        color:
-                        Colors.white,
+                        color: Colors.white,
                         fontSize: 12,
                         fontWeight: FontWeight.normal,
                       ),
@@ -177,10 +162,9 @@ class _SignUpState extends State<SignUp> {
                     Text(
                       'Work Experience',
                       textAlign: TextAlign.start,
-                      style: TextStyle(color: Colors.white,
+                      style: TextStyle(
+                        color: Colors.white,
                         fontFamily: 'Poppins',
-
-
                         fontSize: 17,
                       ),
                     ),
@@ -193,12 +177,12 @@ class _SignUpState extends State<SignUp> {
                   controller: textController3,
                   autofocus: true,
                   obscureText: false,
-                  decoration: InputDecoration(fillColor: Colors.white,
+                  decoration: InputDecoration(
+                    fillColor: Colors.white,
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10)),
                     hintText: 'Work Experience',
-
                   ),
                   maxLines: 5,
                 ),
@@ -213,8 +197,7 @@ class _SignUpState extends State<SignUp> {
                       textAlign: TextAlign.start,
                       style: TextStyle(
                         fontFamily: 'Poppins',
-                        color:
-                        Colors.white,
+                        color: Colors.white,
                         fontSize: 17,
                       ),
                     ),
@@ -227,12 +210,11 @@ class _SignUpState extends State<SignUp> {
                   controller: textController4,
                   autofocus: true,
                   obscureText: false,
-                  decoration: InputDecoration(fillColor: Colors.white,
+                  decoration: InputDecoration(
+                    fillColor: Colors.white,
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10)),
-
-
                   ),
                   maxLines: 5,
                 ),
@@ -248,20 +230,17 @@ class _SignUpState extends State<SignUp> {
                   style: ElevatedButton.styleFrom(
                     primary: Colors.orange,
                     padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-                    textStyle: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
+                    textStyle:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0)),
                     minimumSize: Size(350, 40), //////// HERE
                   ),
                 ),
-
               )
             ],
           ),
         ),
-
       ),
     );
   }

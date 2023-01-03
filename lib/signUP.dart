@@ -105,7 +105,7 @@ class _SignUpState extends State<SignUp> {
                     Text(
                       'Add Your Skills',
                       textAlign: TextAlign.start,
-                      style: TextStyle(
+                      style: TextStyle(color: Colors.white,
                         fontFamily: 'Poppins',
                         fontSize: 17,
                       ),
